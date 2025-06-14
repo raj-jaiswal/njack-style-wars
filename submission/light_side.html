@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light Side - Style Wars</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Bootstrap:    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> 
+    -->
+    <!-- Materialize: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    -->
+    <!-- Include any styling libraries you wish here-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+      .hide-scrollbar {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+      }
+
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+      }
+    </style>
+</head>
+<body class="font-['Poppins'] pt-0 p-16 bg-black relative before:content-[''] before:bg-[#E7E5D6] before:absolute before:inset-0 before:m-2 before:rounded-4xl before:border-14 before:border-black before:pointer-events-none before:z-[-1]">
+  <!-- Navbar -->
+  <nav class="relative z-20">
+    <div>
+      <span class="text-xl -ml-12 text-black absolute top-8 left-32 font-[600]">Light Side</span>
+    </div>
+    <ul 
+      class="w-[54rem] h-16 bg-black text-white flex items-center justify-between px-56 absolute top-0 left-[50%] font-[500]"
+      style="
+      -webkit-mask-image: url('visor.svg');
+      mask-image: url('visor.svg');
+      -webkit-mask-mode: alpha;
+      mask-mode: alpha;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      pointer-events: auto;
+      transform: translateX(-50%);
+"
+    >
+      <li class="mx-3 z-30 w-[35rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Home</a></li>
+      <li class="mx-3 z-30 w-[45rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Guidelines</a></li>
+      <li class="mx-3 z-30 w-[35rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Join Us</a></li>
+      <li class="mx-3 z-30 w-[35rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-64">
+    <h1 class="text-[7rem] block leading-[0.9]" style="font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400;">Welcome to the Light Side</h1>
+    <p class="mt-8 w-154 text-lg font-[600]">
+      Illuminate your web journey with clarity and openness. Join a community that believes in bright, accessible, and uplifting design.
+    </p>
+    <button class="w-48 h-10 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Join the Light</button>
+    <button class="w-48 h-10 border-black bg-[#FFFFFF] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Learn More</button>
+  </section>
+
+  <div class="flex items-center justify-center">
+    <!-- About Section -->
+    <section class="mt-24 h-full border-3 p-6 border-black rounded-2xl mr-4 bg-white h-screen overflow-y-scroll hide-scrollbar w-[40vw]">
+      <h2 class="text-2xl font-[600]">About the Light Side</h2>
+      <p class="mb-2">
+        The Light Side is dedicated to crafting digital experiences that are clear, inviting, and energizing. Our members value transparency, readability, and a sense of space in every design.
+      </p>
+      <p class="mb-2">
+        We encourage thoughtful layouts, accessible color palettes, and designs that make every visitor feel welcome. From the earliest days of the web, advocates of the Light Side have championed simplicity and openness, believing that information should be easy to find and understand.
+      </p>
+      <p>
+        Our philosophy is rooted in the idea that less is more. By minimizing distractions and focusing on what truly matters, we create digital spaces that foster learning, connection, and creativity.
+      </p>
+      <h3 class="text-2xl font-[600] mt-6">Our Mission</h3>
+      <p class="mb-2">
+        We strive to set new standards for web accessibility and user experience. Through workshops, collaborative projects, and open discussions, we empower designers and developers to build sites that shine—regardless of device or ability.
+      </p>
+      <p>
+        The Light Side welcomes everyone, from beginners to experts, to join our movement and help shape a web that is bright, open, and inspiring.
+      </p>
+    </section>
+
+    <!-- Virtues Section -->
+    <section  class="mt-24 h-full border-3 p-6 border-black rounded-2xl bg-white h-screen overflow-y-scroll hide-scrollbar w-full">
+      <h2 class="text-3xl font-[600] mb-4">Our Virtues</h2>
+      <div>
+        <div>
+          <h3 class="text-2xl font-[500]">Clarity</h3>
+          <h4 class="font-[600]">Simple and Intuitive</h4>
+          <p class="mb-3">
+            Every element is placed with purpose. We minimize clutter and use whitespace to guide the eye, ensuring users can focus on what matters most. Navigation menus are straightforward, and content is structured logically to reduce cognitive load.
+          </p>
+          <h4 class="font-[600]">Readable Typography</h4>
+          <p>
+            Fonts are chosen for legibility and comfort. Headings stand out, and body text is easy to scan and understand. We pay close attention to line height, font size, and contrast, making sure that every word is a pleasure to read.
+          </p>
+          <p>
+            Clarity also means clear calls to action. Buttons are distinct, and links are descriptive, guiding users effortlessly through the site.
+          </p>
+          <button class="w-48 mb-8 h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Explore Clarity</button>
+        </div>
+        <div>
+          <h3 class="text-2xl font-[500]">Openness</h3>
+          <h4 class="font-[600]">Welcoming Layouts</h4>
+          <p class="mb-3">
+            Our pages invite exploration, with open navigation and clear calls to action. We avoid barriers, making information accessible to all. Whether you’re browsing on a phone, tablet, or desktop, our layouts adapt to your needs.
+          </p>
+          <h4 class="font-[600]">Inclusive Design</h4>
+          <p class="mb-3">
+            Accessibility is a priority. We use high-contrast colors, descriptive links, and ensure our sites work for everyone. Our designs are tested with screen readers and keyboard navigation to guarantee universal usability.
+          </p>
+          <p>
+            Openness also means sharing knowledge. We publish guides, host Q&A sessions, and encourage members to contribute resources for the benefit of the whole community.
+          </p>
+          <button class="w-48 mb-8 h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Discover Openness</button>
+        </div>
+        <div>
+          <h3 class="text-2xl font-[500]">Energy</h3>
+          <h4 class="font-[600]">Vibrant Visuals</h4>
+          <p class="mb-3">
+            Bright accents and uplifting imagery keep users engaged and motivated. We use color to create a positive, energetic atmosphere. Visual cues such as icons, highlights, and banners help direct attention and add personality to our designs.
+          </p>
+          <h4 class="font-[600]">Interactive Experiences</h4>
+          <p class="mb-3">
+            Subtle animations and responsive feedback make every interaction enjoyable and intuitive. Hover effects, transitions, and micro-interactions bring the interface to life without overwhelming the user.
+          </p>
+          <p>
+            Energy is about momentum. We encourage users to participate, share feedback, and become a part of the Light Side’s ongoing story.
+          </p>
+          <button class="w-48 h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Get Inspired</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Call to Action Section -->
+  <section class="mt-12">
+    <h2 class="text-[3rem]" style="font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400;">Ready to Shine?</h2>
+    <p class="w-256 text-lg font-[600]">
+      Become a part of the Light Side and help us set new standards for web design excellence. Sign up to receive updates, participate in our next workshop, or contribute your own ideas to our growing community.
+    </p>
+    <ul class="mt-4">
+      <li>Sign up for our newsletter to get the latest resources and event invites.</li>
+      <li>Browse our gallery of featured Light Side designs for inspiration.</li>
+      <li>Connect with other members on our forum and share your journey.</li>
+    </ul>
+    <button class="px-6 h-12 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Sign Up Now</button>
+    <button class="px-6 h-12 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">View Member Stories</button>
+  </section>
+
+  <!-- Footer -->
+    <footer class="mt-16 text-white bg-black p-16 rounded-3xl border-3 border-black transition duration-1000 hover:bg-[#E7E5D6] hover:text-black">
+      <h3 class="text-3xl font-[600]">Contact the Light Side Team</h3>
+      <p class="text-lg mb-6 -mt-2">
+        <div class=" cursor-pointer transition duration-150 hover:-translate-y-1">Email: light@stylewars.com</div>
+        <div class=" cursor-pointer transition duration-150 hover:-translate-y-1 mb-6">Follow us on social media for updates, tips, and inspiration.</div>
+      </p>
+      <p class="text-sm">
+        &copy; 2025 Light Side. All rights reserved.
+      </p>
+    </footer>
+</body>
+</html>
