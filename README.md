@@ -1,3 +1,7 @@
+## View Submission: 
+
+<a href="https://raj-jaiswal.github.io/njack-style-wars/submission/light_side.html">https://raj-jaiswal.github.io/njack-style-wars/submission/light_side.html</a>
+
 # 🌗 Style Wars: Light v.s Dark
 
 Welcome to **Style Wars: Light v.s Dark**
