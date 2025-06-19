@@ -28,13 +28,32 @@
       body {
         cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><circle cx='12' cy='12' r='10' fill='white' stroke='black' stroke-width='2'/></svg>") 12 12, auto;
       }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(25px);
+        animation: fadeIn 1s ease forwards;
+      }
+
+      .fade-in-top {
+        opacity: 0;
+        transform: translateY(-15px);
+        animation: fadeIn 1s ease forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
 </head>
 <body class="overflow-x-hidden font-['Poppins'] pt-0 p-16 bg-black relative before:content-[''] before:bg-[#E7E5D6] before:absolute before:inset-0 before:m-2 before:rounded-4xl before:border-14 before:border-black before:pointer-events-none before:z-[-1]">
   <!-- Navbar -->
   <nav class="relative z-20">
     <div>
-      <span class="text-xl -ml-12 text-black absolute top-8 left-32 font-[600]">Light Side</span>
+      <span class="text-xl -ml-12 text-black absolute lg:top-8 lg:left-32 lg:translate-x-0 lg:translate-x-0 font-[600] top-24 left-[50%]">Light Side</span>
     </div>
     <ul 
       class="w-[54rem] h-16 bg-black text-white flex items-center justify-between px-56 absolute top-0 left-[50%] font-[500]"
@@ -49,21 +68,22 @@
       pointer-events: auto;
       transform: translateX(-50%);"
     >
-      <li class="mx-3 z-30 w-[35rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Home</a></li>
-      <li class="mx-3 z-30 w-[50rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Guidelines</a></li>
-      <li class="mx-3 z-30 w-[35rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Join Us</a></li>
-      <li class="mx-3 z-30 w-[40rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Contact</a></li>
+      <li class="fade-in-top mx-3 z-30 w-[35rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Home</a></li>
+      <li class="fade-in-top mx-3 z-30 w-[50rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Guidelines</a></li>
+      <li class="fade-in-top mx-3 z-30 w-[35rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Join Us</a></li>
+      <li class="fade-in-top mx-3 z-30 w-[40rem] h-9 rounded-full bg-transparent text-white flex items-center justify-center transition duration-300 hover:bg-[#E7E5D6] hover:text-black"><a href="#">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
   <section class="relative pt-64">
-    <h1 class="text-[7rem] block leading-[0.9]" style="font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400;">Welcome to the Light Side</h1>
-    <p class="mt-8 w-154 text-lg font-[600]">
+    <h1 class="fade-in text-[7rem] block leading-[0.9]"
+      style="font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400;">Welcome to the Light Side</h1>
+    <p class="fade-in mt-8 w-154 text-lg font-[600]" style="animation-delay: 0.2s;">
       Illuminate your web journey with clarity and openness. Join a community that believes in bright, accessible, and uplifting design.
     </p>
-    <button class="w-48 h-10 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">Join the Light</button>
-    <button class="w-48 h-10 border-black bg-[#FFFFFF] border-3 mt-5 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">Learn More</button>
+    <button style="animation-delay: 0.8s;" class="fade-in w-48 cursor-pointer h-10 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">Join the Light</button>
+    <button style="animation-delay: 0.8s;" class="fade-in w-48 cursor-pointer h-10 border-black bg-[#FFFFFF] border-3 mt-5 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">Learn More</button>
   </section>
 
   <div class="flex items-center justify-center flex-col lg:flex-row">
@@ -105,7 +125,7 @@
           <p>
             Clarity also means clear calls to action. Buttons are distinct, and links are descriptive, guiding users effortlessly through the site.
           </p>
-          <button class="w-48 h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Explore Clarity</button>
+          <button class="w-48 cursor-pointer h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Explore Clarity</button>
         </div>
         <div class="p-6 border-black border-3 rounded-2xl mb-8">
           <h3 class="text-2xl font-[500]">Openness</h3>
@@ -120,7 +140,7 @@
           <p>
             Openness also means sharing knowledge. We publish guides, host Q&A sessions, and encourage members to contribute resources for the benefit of the whole community.
           </p>
-          <button class="w-48 h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Discover Openness</button>
+          <button class="w-48 cursor-pointer h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Discover Openness</button>
         </div>
         <div class="p-6 border-black border-3 rounded-2xl">
           <h3 class="text-2xl font-[500]">Energy</h3>
@@ -135,7 +155,7 @@
           <p>
             Energy is about momentum. We encourage users to participate, share feedback, and become a part of the Light Side’s ongoing story.
           </p>
-          <button class="w-48 h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Get Inspired</button>
+          <button class="w-48 cursor-pointer h-10 border-black bg-[#E7E5D6] border-3 mt-5 rounded-full font-[500] transition duration-300 hover:bg-black hover:text-white">Get Inspired</button>
         </div>
       </div>
     </section>
@@ -153,8 +173,8 @@
       <li>Browse our gallery of featured Light Side designs for inspiration.</li>
       <li>Connect with other members on our forum and share your journey.</li>
     </ul>
-    <button class="px-6 h-12 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">Sign Up Now</button>
-    <button class="px-6 h-12 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">View Member Stories</button>
+    <button class="px-6 cursor-pointer h-12 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">Sign Up Now</button>
+    <button class="px-6 cursor-pointer h-12 border-black bg-[#FFFFFF] border-3 mt-5 mr-4 rounded-full font-[500] transition duration-300 shadow-[0_0_0_rgba(0,0,0,1)] hover:shadow-[-0.5rem_0.5rem_0_rgba(0,0,0,1)] hover:bg-black hover:text-white hover:translate-x-2 hover:-translate-y-2 hover:border-white hover:border-2">View Member Stories</button>
   </section>
 
   <!-- Footer -->
